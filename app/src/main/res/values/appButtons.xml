@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/bluegrey500</item> <!-- Default color -->
+        <item name="rippleColor">@color/purple</item> <!-- Highlight color -->
+        <item name="cornerRadius">16dp</item>
+    </style>
+     State when the button is focused
+
+</resources>

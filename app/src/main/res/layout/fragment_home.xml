@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluegrey800"
+    tools:context=".fragments.HomeF">
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="411dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.0">
+        <LinearLayout
+            android:id="@+id/horizontal_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:layout_editor_absoluteY="69dp">
+            <Button
+                android:id="@+id/general"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/bluegrey500"
+                android:text="general"
+                android:textColor="@color/bluegrey100" />
+
+            <Button
+                android:id="@+id/health"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/bluegrey500"
+                android:text="Health"
+                android:textColor="@color/bluegrey100" />
+
+            <Button
+                android:id="@+id/sports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/bluegrey500"
+                android:text="Sports"
+                android:textColor="@color/bluegrey100" />
+
+            <Button
+
+                android:id="@+id/science"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/bluegrey500"
+                android:text="Science"
+                android:textColor="@color/bluegrey100" />
+
+            <Button
+                android:id="@+id/technology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/bluegrey500"
+                android:text="technology"
+                android:textColor="@color/bluegrey100" />
+
+            <Button
+                android:id="@+id/business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/bluegrey500"
+                android:text="business"
+                android:textColor="@color/bluegrey100" />
+
+            <Button
+                android:id="@+id/entertainment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/bluegrey500"
+                android:text="entertainment"
+                android:textColor="@color/bluegrey100" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="411dp"
+                android:layout_height="20dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/bluegrey800"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme">
+
+
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="447dp"
+        android:layout_height="803dp"
+        android:layout_marginTop="98dp"
+        android:background="@color/bluegrey800"
+        android:backgroundTint="@color/bluegrey800"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

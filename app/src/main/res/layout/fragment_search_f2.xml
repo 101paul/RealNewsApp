@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bluegrey800"
+        tools:context=".fragments.search_f">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_recycler"
+        android:layout_width="450dp"
+        android:layout_height="745dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <TextView
+        android:layout_width="152dp"
+        android:layout_height="77dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="36dp"
+        android:background="@color/bluegrey800"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Explore"
+        android:textColor="@color/white"
+        android:textSize="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/searchView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="399dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:hint="search news"
+        android:iconifiedByDefault="false"
+        app:layout_constraintBottom_toBottomOf="@+id/search_recycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126"
+        app:queryHint="Search news..." />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
